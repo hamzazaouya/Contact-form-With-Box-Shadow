@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ecf0f3;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+.login {
+	width: 430px;
+	height: 700px;
+	padding: 60px 35px 35px 35px;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 13px 13px 20px rgba(0, 0, 0, .2),
+		-13px -13px 20px rgba(255, 255, 255, .8);
+}
+
+.login .logo {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	background-color: #FFF;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+	margin-bottom: 30px;
+}
+
+.login .logo::before {
+	content: '';
+	position: absolute;
+	height: 105%;
+	width: 105%;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 50%;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+.login .logo img {
+	width: 100%
+}
+
+.login h2 {
+	text-transform: capitalize;
+	font-size: 28px;
+	letter-spacing: .5px;
+
+}
+
+.login span:nth-of-type(1) {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 7px;
+	font-size: 15px;
+	letter-spacing: 3px;
+}
+
+form {
+	width: 100%;
+	padding: 70px 5px 5px 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.login form div {
+	width: 75%;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	box-shadow: 8px 8px 8px #cbcde1 inset,
+		-8px -8px 8px #FFF inset;
+
+}
+
+.login form div input {
+	outline: none;
+	border: none;
+	background: none;
+	font-size: 18px;
+	padding: 20px 10px 20px 5px;
+}
+
+.login form div i {
+	color: #999;
+	margin: 0px 10px -3px 25px;
+	font-size: 17px;
+}
+.login form > input {
+	color:#FFF;
+	background:none;
+	background-color: #76c3b0;
+	border:none;
+	width: 75%;
+	border-radius: 25px;
+	padding: 20px 10px 20px 5px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .3s;
+	box-shadow: 3px 3px 8px #b1b1b1,
+		-3px -3px 8px #FFF;
+}
+.login form > input:hover{
+	background-color: #76c3b0bf
+}
+
+.login > span:nth-of-type(2) {
+	font-size: 15px;
+}
+
+.login > span:nth-of-type(2) a {
+	color:#aaa;
+	font-size: 15px;
+	text-decoration: none;
+}
